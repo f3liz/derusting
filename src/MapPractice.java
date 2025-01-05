@@ -1,29 +1,44 @@
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class MapPractice {
   public static void main(String[] args) {
     // Create a HashMap with String keys and Integer values and
     // assign it to a variable of type Map
-
+    HashMap<String, Integer> map = new HashMap<>();
     // Put 3 different key/value pairs in the Map
     // (it's OK to do this one-by-one)
-
+    map.put("hello", 1);
+    map.put("bye", 2);
+    map.put("ham", 100);
     // Get the value associated with a given key in the Map
-
+    System.out.println(map.get("ham"));
+    System.out.println();
     // Find the size (number of key/value pairs) of the Map
-
+    System.out.println(map.size());
+    System.out.println();
     // Replace the value associated with a given key (the size of the Map shoukld not change)
-
+    map.replace("hello", 20);
     // Check whether the Map contains a given key
-
+    System.out.println(map.containsKey("ham"));
+    System.out.println();
     // Check whether the Map contains a given value
-
+    System.out.println(map.containsValue(100));
+    System.out.println();
     // Iterate over the keys of the Map, printing each key
-
+    for (String string : map.keySet()) {
+      System.out.println(string);
+    }
+    System.out.println();
     // Iterate over the values of the map, printing each value
-
+    for (int value : map.values()) {
+      System.out.println(value);
+    }
+    System.out.println();
     // Iterate over the entries in the map, printing each key and value
-
+    for (Map.Entry<String, Integer> entry : map.entrySet()) {
+      System.out.println("Key:" + entry.getKey() + " Value:" + entry.getValue());
+    }
     /*
      * Usage tip!
      * 

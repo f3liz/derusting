@@ -4,3 +4,4 @@ As you work through this exercise, write down anything that you needed to look u
 
 - ArrayList
 - String join method
+- Map entry function
