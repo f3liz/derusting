@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class ListPractice {
 
 
   public static void main(String[] args) {
     // Create an empty ArrayList of Strings and assign it to a variable of type List
-    ArrayList<String> newList = new ArrayList<>();
+    List<String> newList = new ArrayList<>();
     // Add 3 elements to the list (OK to do one-by-one)
     newList.add("hello");
     newList.add("bye");

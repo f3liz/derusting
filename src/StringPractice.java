@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class StringPractice {
   public static void main(String[] args) {
@@ -22,7 +23,7 @@ public class StringPractice {
     }
     System.out.println();
     // Create an ArrayList of Strings and assign it to a variable
-    ArrayList<String> list = new ArrayList<>();
+    List<String> list = new ArrayList<>();
     // Add multiple strings to the List (OK to do one-by-one)
     list.add("hello");
     list.add("goodbye");
